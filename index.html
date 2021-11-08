@@ -2,153 +2,36 @@
 <html>
 	<head>
 	<meta charset = "utf-8">
-	<title>JY's Home(test)</title>
+	<title>JY's Home</title>
 	<style>
-	#background-image {
-	background-image: url(./images/windows10.jpg);
-	width: 1200px;
-	height: 675px;
-	background-repeat: no-repeat;
-	margin-top: 150px;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	background-size: cover;
+	body {
+	background-color : black;
 	}
-	#me {
+	#on {
 	border-radius: 300px;
-	position: absolute;
-	top: 40px;
-	left: 40px;
-	margin-left: auto;
-	margin-right: auto;
-	opacity: 0.8;
 	}
-	#me:hover {
-	transform: scale(1.5);
-	opacity: 1.0;
-	}
-	#contest {
+	#off {
 	border-radius: 300px;
-	position: absolute;
-	top: 40px;
-	left: 160px;
-	margin-left: auto;
-	margin-right: auto;
-	opacity: 0.8;
 	}
-	#contest:hover {
-	transform: scale(1.5);
-	opacity: 1.0;
-	}
-	#certificate {
-	border-radius: 300px;
-	position: absolute;
-	top: 160px;
-	left: 40px;
-	margin-left: auto;
-	margin-right: auto;
-	opacity: 0.8;
-	}
-	#certificate:hover {
-	transform: scale(1.5);
-	opacity: 1.0;
-	}
-	#award {
-	border-radius: 300px;
-	position: absolute;
-	top: 160px;
-	left: 160px;
-	margin-left: auto;
-	margin-right: auto;
-	opacity: 0.8;
-	}
-	#award:hover {
-	transform: scale(1.5);
-	opacity: 1.0;
-	}
-	#activity {
-	border-radius: 300px;
-	position: absolute;
-	top: 280px;
-	left: 40px;
-	margin-left: auto;
-	margin-right: auto;
-	opacity: 0.8;
-	}
-	#activity:hover {
-	transform: scale(1.5);
-	opacity: 1.0;
-	}
-	#music-player {
-	position: absolute;;
-	top: 40px;
-	right: 40px;
-	}
-	#music-player-font {
-	position: absolute;;
-	top: 100px;
-	right: 220px;
-	color: green;
-	}
-	#music-player-list {
-	position: absolute;
-	top: 150px;
-	right: 65px;
-	color: red;
-	border-radius:20px;
-	background-color: MistyRose;
-	width: 250px;
-	height: 185px;
-	opacity: 0.9;
-	}
-	.title {
-	font-size: 30px;
+	.photo {
 	text-align: center;
-	margin-top: 0px;
-	margin-bottom: 10px;
+	margin-top: 300px;
+	}
+	.photo img:last-child {
+	display: none;
+	}
+	.photo:hover img:first-child {
+	display: none;
+	}
+	.photo:hover img:last-child {
+	display: inline-block;
 	}
 	</style>
 	</head>
-
 	<body>
-	<div id="background-image">
-
-		<a href="소개.html"><img id="me" src="./images/나.jpg" width="90" height="90"></a>
-		<a href="대회.html"><img id="contest" src="./images/대회.jpg" width="90" height="90"></a>
-		<a href="자격증.html"><img id="certificate" src="./images/자격증.jpg" width="90" height="90"></a>
-		<a href="상.html"><img id="award" src="./images/상.jpg" width="90" height="90"></a>
-		<a href="활동.html"><img id="activity" src="./images/활동.jpg" width="90" height="90"></a>
-	
-		<audio id="bootingsound" autoplay>
-		<source src = "./songs/bootingsound.mp3" type = "audio/mp3">
-		<source src = "./songs/bootingsound.ogg" type = "audio/ogg">
-		<source src = "./songs/bootingsound.wav" type = "audio/wav">
-		</audio>
-
-		<audio id="music-player" controls>
-		<source src = "./songs/song.mp3" type = "audio/mp3">
-		</audio>
-	
-	<div id="music-player-font">
-	<b><em>music player♪</em></b>
-	</div>
-	
-	<div id="music-player-list">
-	<p class="title"><b><em>List</em></b></p>
-	&nbsp;1. KCM - 버릇처럼 셋을 센다
-	<br>
-	&nbsp;2. MSG워너비 - 바라만 본다
-	<br>
-	&nbsp;3. SG워너비 - 처음처럼
-	<br>
-	&nbsp;4. 디셈버 - 별이될께
-	<br>
-	&nbsp;5. 이무진 - 신호등
-	<br>
-	&nbsp;6. 헤이즈 - 헤픈 우연
-	</div>
-	
+	<div class="photo">
+	<img id="off" src="images/off.jpg" width="190" height="190">
+	<a href="메인.html"><img id="on" src="images/on.jpg" width="190" height="190"></a>
 	</div>
 	</body>
 </html>
